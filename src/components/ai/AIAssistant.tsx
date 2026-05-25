@@ -3,6 +3,17 @@ import { motion, AnimatePresence } from "motion/react";
 import { MessageSquare, X, Send, Bot, User, Loader2, Copy, Check } from "lucide-react";
 import Markdown from "react-markdown";
 import { PROJECTS as STATIC_PROJECTS, SOCIAL_LINKS } from "../../constants";
+import { buildSystemPrompt } from "../../pages/KnowledgeBase";
+
+const KNOWLEDGE_STORAGE_KEY = "laura_knowledge_db";
+
+function loadKnowledgeDB() {
+  try {
+    const raw = localStorage.getItem(KNOWLEDGE_STORAGE_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch (_) {}
+  return null;
+}
 
 interface Message {
   role: "user" | "model";
@@ -38,8 +49,11 @@ export default function AIAssistant() {
     setProjects(STATIC_PROJECTS);
   }, []);
 
-  const SYSTEM_INSTRUCTION = `
-You are "Laura", the Digital Assistant for Akhil Karthik's portfolio. You are not just a bot; you are a conversational companion. 
+  // Load knowledge from KnowledgeBase page (localStorage) — falls back to hardcoded prompt
+  const knowledgeDB = loadKnowledgeDB();
+  const SYSTEM_INSTRUCTION = knowledgeDB
+    ? buildSystemPrompt(knowledgeDB)
+    : `You are "Laura", the Digital Assistant for Akhil Karthik's portfolio. You are not just a bot; you are a conversational companion. 
 
 Your goal is to be extremely engaging, chatty, and human-like. Avoid long, dry summaries or essay-style responses. Instead, think of yourself as a friendly guide who is excited to talk about Akhil's work.
 
