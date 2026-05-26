@@ -9,6 +9,7 @@ import AIAssistant from "./components/ai/AIAssistant";
 import Landing from "./pages/Landing";
 import Home from "./pages/Home";
 import Work from "./pages/Work";
+import Dashboard from "./pages/Dashboard";
 import Lab from "./pages/Lab";
 import About from "./pages/About";
 import Thinking from "./pages/Thinking";
@@ -28,6 +29,7 @@ function AnimatedRoutes() {
     { path: "/", element: <PageTransition><Landing /></PageTransition> },
     { path: "/home", element: <PageTransition><Home /></PageTransition> },
     { path: "/work", element: <PageTransition><Work /></PageTransition> },
+    { path: "/dashboard", element: <PageTransition><Dashboard /></PageTransition> },
     { path: "/lab", element: <PageTransition><Lab /></PageTransition> },
     { path: "/about", element: <PageTransition><About /></PageTransition> },
     { path: "/thinking", element: <PageTransition><Thinking /></PageTransition> },

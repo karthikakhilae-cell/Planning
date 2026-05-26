@@ -1,7 +1,8 @@
 import { motion } from "motion/react";
 import { PROJECTS as STATIC_PROJECTS, SOCIAL_LINKS } from "../constants";
 import { useEffect, useState } from "react";
-import { Loader2 } from "lucide-react";
+import { BarChart3, Loader2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Work() {
   const [projects, setProjects] = useState(STATIC_PROJECTS);
@@ -48,6 +49,13 @@ export default function Work() {
         <p className="text-muted text-base md:text-lg leading-relaxed max-w-2xl font-light">
           A deep dive into my professional work, case studies, and successful project implementations.
         </p>
+        <Link
+          to="/dashboard"
+          className="mt-8 inline-flex items-center gap-3 rounded-full bg-ink px-7 py-4 text-[10px] font-bold uppercase tracking-widest text-white shadow-xl shadow-ink/10 transition-all duration-500 hover:bg-accent"
+        >
+          <BarChart3 className="w-4 h-4" />
+          Dashboard Analysis
+        </Link>
       </motion.div>
 
       {isLoading ? (

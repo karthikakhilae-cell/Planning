@@ -7,6 +7,7 @@ import { PROFILE_PIC, SOCIAL_LINKS } from "../../constants";
 const NAV_LINKS = [
   { name: "Home", path: "/home" },
   { name: "Work", path: "/work" },
+  { name: "Dashboard", path: "/dashboard" },
   { name: "Hire Me", path: "/hire-me" },
   { name: "Lab", path: "/lab" },
   { name: "Thinking", path: "/thinking" },

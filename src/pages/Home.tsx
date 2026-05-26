@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useState, FormEvent, useEffect } from "react";
 import { PROJECTS as STATIC_PROJECTS, PROFILE_PIC, SOCIAL_LINKS } from "../constants";
 import AntigravitySkills from "../components/home/AntigravitySkills";
+import AnalyticsVisuals from "../components/home/AnalyticsVisuals";
 
 export default function Home() {
   const [formState, setFormState] = useState({ name: "", email: "", message: "" });
@@ -132,6 +133,8 @@ export default function Home() {
         </motion.div>
       </section>
 
+      <AnalyticsVisuals projectCount={projects.length} />
+
       <AntigravitySkills />
 
       {/* Quick Links Grid - Refined */}
@@ -144,6 +147,7 @@ export default function Home() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {[
             { to: "/work", title: "Work", desc: "Selected professional projects and case studies." },
+            { to: "/dashboard", title: "Dashboard", desc: "Advanced KPI, S-curve, risk, and controls visuals." },
             { to: "/blogs", title: "Blogs", desc: "Long-form articles and technical deep-dives on Medium." },
             { to: "/lab", title: "Lab", desc: "Experiments, technical ideas, and raw prototypes." },
             { to: "/thinking", title: "Thinking", desc: "Strategic insights and technical deep-dives." },
