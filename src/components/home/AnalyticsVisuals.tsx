@@ -43,7 +43,7 @@ export default function AnalyticsVisuals({ projectCount }: AnalyticsVisualsProps
             Visual proof of <span className="text-accent">planning</span> intelligence.
           </h2>
           <p className="max-w-xl text-muted leading-relaxed font-light">
-            A snapshot of the kind of decision systems Akhil builds: schedule health, data platform throughput,
+            A snapshot of the kind of decision systems i build: schedule health, data platform throughput,
             portfolio coverage, KPI design, and operational performance brought into one readable layer.
           </p>
         </motion.div>
