@@ -189,7 +189,7 @@ export const SKILLS = [
 
 export const SOCIAL_LINKS = {
   github: "https://github.com/akhilkarthik",
-  linkedin: "https://www.linkedin.com/in/akhilkarthikk/",
+  linkedin: "https://www.linkedin.com/in/akhil-karthik/",
   instagram: "https://instagram.com/akhilkarthik.de",
   medium: "https://akhilkarthik.medium.com/",
   email: "mailto:karthikakhil.in@gmail.com",
