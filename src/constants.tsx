@@ -193,7 +193,7 @@ export const SOCIAL_LINKS = {
   instagram: "https://instagram.com/akhilkarthik.de",
   medium: "https://akhilkarthik.medium.com/",
   email: "mailto:karthikakhil.in@gmail.com",
-  cv: "https://drive.google.com/file/d/1oP6LOJeK9TNTqo6q9cdQWI403gbXyIaa/view" // Placeholder CV link
+  cv: "https://drive.google.com/file/d/1AoxKOL9A18WQzuU3m-YUtwb9QxRyRLqh/view" // Placeholder CV link
 };
 
 export const PROFILE_PIC = "https://lh3.googleusercontent.com/d/1tk7ppgl-vYdJsRNaWQ2_F3-qCXcbWItI";
