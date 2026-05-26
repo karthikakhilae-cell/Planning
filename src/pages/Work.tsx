@@ -1,8 +1,14 @@
 import { motion } from "motion/react";
 import { PROJECTS as STATIC_PROJECTS, SOCIAL_LINKS } from "../constants";
 import { useEffect, useState } from "react";
-import { BarChart3, Loader2 } from "lucide-react";
+import { ArrowRight, BarChart3, Loader2, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
+
+const ONGOING_PROJECT_IDS = new Set([
+  "fabric-lakehouse",
+  "planning-automation",
+  "db-optimization",
+]);
 
 export default function Work() {
   const [projects, setProjects] = useState(STATIC_PROJECTS);
@@ -54,7 +60,8 @@ export default function Work() {
           className="mt-8 inline-flex items-center gap-3 rounded-full bg-ink px-7 py-4 text-[10px] font-bold uppercase tracking-widest text-white shadow-xl shadow-ink/10 transition-all duration-500 hover:bg-accent"
         >
           <BarChart3 className="w-4 h-4" />
-          Dashboard Analysis
+          View Dashboard analysis
+          <ArrowRight className="w-4 h-4" />
         </Link>
       </motion.div>
 
@@ -86,7 +93,16 @@ export default function Work() {
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-colors duration-500" />
-                <div className="absolute top-6 right-6 text-white/50 font-display text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                {ONGOING_PROJECT_IDS.has(project.id) && (
+                  <div className="absolute top-4 right-4 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/15 px-3 py-2 text-[9px] font-bold uppercase tracking-[0.18em] text-white shadow-2xl shadow-black/20 backdrop-blur-md">
+                    <span className="relative flex h-4 w-4 items-center justify-center rounded-full bg-accent/25">
+                      <span className="absolute h-4 w-4 animate-ping rounded-full bg-accent/40" />
+                      <Sparkles className="relative h-3 w-3 text-white" />
+                    </span>
+                    Ongoing
+                  </div>
+                )}
+                <div className="absolute top-6 left-6 text-white/50 font-display text-xl opacity-0 group-hover:opacity-100 transition-opacity">
                   {project.year}
                 </div>
               </div>
