@@ -23,7 +23,7 @@ export default function Blogs() {
     const fetchPosts = async () => {
       try {
         const response = await fetch(
-          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@akhilkarthik`
+          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@karthikakhil.in`
         );
         const data = await response.json();
         if (data.status === "ok") {
