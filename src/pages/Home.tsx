@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, Mail, Linkedin, Github, Instagram, ExternalLink, Loader2 } from "lucide-react";
+import { ArrowRight, Mail, Linkedin, Github, Instagram, ExternalLink, Loader2, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, FormEvent, useEffect } from "react";
 import { PROJECTS as STATIC_PROJECTS, PROFILE_PIC, SOCIAL_LINKS } from "../constants";
@@ -102,6 +102,14 @@ export default function Home() {
                 className="bg-white text-ink border border-line/20 px-8 sm:px-12 py-4 sm:py-6 rounded-full flex items-center justify-center sm:justify-start gap-4 text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-white hover:border-accent transition-all duration-500 shadow-xl shadow-ink/5"
               >
                 Hire Me <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link
+                to="/blogs"
+                className="bg-accent text-white px-8 sm:px-12 py-4 sm:py-6 rounded-full flex items-center justify-center sm:justify-start gap-4 text-xs font-bold uppercase tracking-widest hover:bg-ink transition-all duration-500 shadow-xl shadow-accent/10"
+              >
+                <BookOpen className="w-4 h-4" />
+                Latest Blogs
+                <ArrowRight className="w-4 h-4" />
               </Link>
             </motion.div>
             

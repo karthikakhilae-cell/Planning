@@ -191,7 +191,7 @@ export const SOCIAL_LINKS = {
   github: "https://github.com/akhilkarthik",
   linkedin: "https://www.linkedin.com/in/akhil-karthik/",
   instagram: "https://instagram.com/akhilkarthik.de",
-  medium: "https://akhilkarthik.medium.com/",
+  medium: "https://medium.com/@karthikakhil.in",
   email: "mailto:karthikakhil.in@gmail.com",
   cv: "https://drive.google.com/file/d/1AoxKOL9A18WQzuU3m-YUtwb9QxRyRLqh/view" // Placeholder CV link
 };
