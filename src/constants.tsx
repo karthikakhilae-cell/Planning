@@ -16,7 +16,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop',
     year: '2025',
     tags: ['Microsoft Fabric', 'Synapse Spark', 'DirectLake', 'Power BI'],
-    link: 'https://github.com/akhilkarthik/Enterprise-Fabric-Data-Lakehouse'
+    link: 'https://github.com/karthikakhilae-cell/Enterprise-Fabric-Data-Lakehouse'
   },
   {
     id: 'planning-automation',
@@ -26,7 +26,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop',
     year: '2024',
     tags: ['AI Automations', 'Python', 'Primavera P6', 'LangChain'],
-    link: 'https://github.com/akhilkarthik/P6-Schedule-AI-Automation'
+    link: 'https://github.com/karthikakhilae-cell/P6-Schedule-AI-Automation'
   },
   {
     id: 'db-optimization',
@@ -36,7 +36,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=1200&auto=format&fit=crop',
     year: '2024',
     tags: ['SQL Server', 'Database Tuning', 'ETL/ELT', 'Data Architectures'],
-    link: 'https://github.com/akhilkarthik/Enterprise-Database-Optimization'
+    link: 'https://github.com/karthikakhilae-cell/Enterprise-Database-Optimization'
   },
   {
     id: 'spotify-analysis',
@@ -46,7 +46,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=1200&auto=format&fit=crop',
     year: '2024',
     tags: ['Power BI', 'Python', 'DENEB'],
-    link: 'https://github.com/akhilkarthik/Adavanced-Power-bi-project'
+    link: 'https://github.com/karthikakhilae-cell/Adavanced-Power-bi-project'
   },
   {
     id: 'grocery-analytics',
@@ -56,7 +56,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop',
     year: '2023',
     tags: ['Power BI', 'Forecasting', 'SQL'],
-    link: 'https://github.com/akhilkarthik/Power-bi-Grocery-store-Data-Analysis'
+    link: 'https://github.com/karthikakhilae-cell/Power-bi-Grocery-store-Data-Analysis'
   },
   {
     id: 'spacex-landing',
@@ -66,7 +66,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1517976487492-5750f3195933?q=80&w=1200&auto=format&fit=crop',
     year: '2023',
     tags: ['Python', 'Machine Learning', 'Data Science'],
-    link: 'https://github.com/akhilkarthik/SpaceX-Falcon-9-first-stage-Landing-Prediction'
+    link: 'https://github.com/karthikakhilae-cell/SpaceX-Falcon-9-first-stage-Landing-Prediction'
   },
   {
     id: 'survey-analysis',
@@ -76,7 +76,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
     year: '2022',
     tags: ['Power BI', 'Data Visualization', 'Insights'],
-    link: 'https://github.com/akhilkarthik/Professional-survey-Analysis-using-Power-bi'
+    link: 'https://github.com/karthikakhilae-cell/Professional-survey-Analysis-using-Power-bi'
   },
   {
     id: 'housing-cleaning',
@@ -86,7 +86,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop',
     year: '2022',
     tags: ['SQL', 'Data Cleaning', 'Database'],
-    link: 'https://github.com/akhilkarthik/Housing-Data_cleaning_Sql'
+    link: 'https://github.com/karthikakhilae-cell/Housing-Data_cleaning_Sql'
   },
   {
     id: 'chicago-analysis',
@@ -96,7 +96,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1200&auto=format&fit=crop',
     year: '2021',
     tags: ['SQL', 'Python', 'Data Analysis'],
-    link: 'https://github.com/akhilkarthik/Chicago-data-analysis-with-sql-and-Python'
+    link: 'https://github.com/karthikakhilae-cell/Chicago-data-analysis-with-sql-and-Python'
   },
   {
     id: 'bitcoin-chart',
@@ -106,7 +106,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=1200&auto=format&fit=crop',
     year: '2021',
     tags: ['Python', 'API', 'Visualization'],
-    link: 'https://github.com/akhilkarthik/Realtime-Bitcoin-Candlestick-chart_python'
+    link: 'https://github.com/karthikakhilae-cell/Realtime-Bitcoin-Candlestick-chart_python'
   },
   {
     id: 'face-detection',
@@ -116,7 +116,7 @@ export const PROJECTS = [
     image: 'https://home.dartmouth.edu/sites/home/files/styles/16_9_lg/public/2023-11/AI_face_recognition_technology.jpg?h=0a8b6f8b&itok=n7x7WDVk',
     year: '2021',
     tags: ['Python', 'OpenCV', 'Computer Vision'],
-    link: 'https://github.com/akhilkarthik/Face-detection'
+    link: 'https://github.com/karthikakhilae-cell/Face-detection'
   },
   {
     id: 'satellite-tracking',
@@ -126,7 +126,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1200&auto=format&fit=crop',
     year: '2020',
     tags: ['Python', 'SpaceTech', 'Data Science'],
-    link: 'https://github.com/akhilkarthik/Satellite_tracking'
+    link: 'https://github.com/karthikakhilae-cell/Satellite_tracking'
   },
   {
     id: 'pizza-database',
@@ -136,7 +136,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop',
     year: '2020',
     tags: ['SQL', 'Database Design', 'Optimization'],
-    link: 'https://github.com/akhilkarthik/Sql_Pizza_delivery_database'
+    link: 'https://github.com/karthikakhilae-cell/Sql_Pizza_delivery_database'
   },
   {
     id: 'sql-intermediate',
@@ -146,7 +146,7 @@ export const PROJECTS = [
     image: 'https://www.ed2go.com/common/images/1/17136.jpg',
     year: '2021',
     tags: ['SQL', 'Data Manipulation', 'Database'],
-    link: 'https://github.com/akhilkarthik/Sql_intermediate'
+    link: 'https://github.com/karthikakhilae-cell/Sql_intermediate'
   },
   {
     id: 'tableau-viz',
@@ -156,7 +156,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop',
     year: '2022',
     tags: ['Tableau', 'Data Visualization', 'Dashboard'],
-    link: 'https://github.com/akhilkarthik/Tableau-Visualization-Project'
+    link: 'https://github.com/karthikakhilae-cell/Tableau-Visualization-Project'
   },
   {
     id: 'covid-sql',
@@ -166,7 +166,7 @@ export const PROJECTS = [
     image: 'https://storage.googleapis.com/kaggle-datasets-images/3159770/5470717/7dbbf5e7331eb39d4309a8f8c778d63d/dataset-cover.jpg?t=2023-04-20-19-26-35',
     year: '2021',
     tags: ['SQL', 'Data Analysis', 'Healthcare'],
-    link: 'https://github.com/akhilkarthik/Sql_Covid_Project'
+    link: 'https://github.com/karthikakhilae-cell/Sql_Covid_Project'
   },
   {
     id: 'python-data-suite',
@@ -176,7 +176,7 @@ export const PROJECTS = [
     image: 'https://i.redd.it/rxezjyf4ojx41.png',
     year: '2021',
     tags: ['Python', 'Pandas', 'NumPy'],
-    link: 'https://github.com/akhilkarthik/Data-Analysis-using-python'
+    link: 'https://github.com/karthikakhilae-cell/Data-Analysis-using-python'
   }
 ];
 
@@ -188,11 +188,11 @@ export const SKILLS = [
 ];
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/akhilkarthik",
+  github: "https://github.com/karthikakhilae-cell",
   linkedin: "https://www.linkedin.com/in/akhil-karthik/",
   instagram: "https://instagram.com/akhilkarthik.de",
   medium: "https://medium.com/@karthikakhil.in",
-  email: "mailto:karthikakhil.in@gmail.com",
+  email: "mailto:akhilkarthik001@gmail.com",
   cv: "https://drive.google.com/file/d/1AoxKOL9A18WQzuU3m-YUtwb9QxRyRLqh/view" // Placeholder CV link
 };
 

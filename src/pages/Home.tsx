@@ -114,7 +114,7 @@ export default function Home() {
             </motion.div>
             
             <p className="max-w-sm text-sm text-muted/80 leading-relaxed font-light">
-              Highly strategic Planning Engineer and Database Specialist with 5+ years of experience blending scheduling operations with modern Data Science, Microsoft Fabric, BI Intelligence, and AI automations.
+              Highly strategic Planning Engineer and Data Analyst with 4+ years of experience blending scheduling operations with modern Data Science, Microsoft Fabric, BI Intelligence, and AI automations.
             </p>
           </div>
         </motion.div>
@@ -192,7 +192,7 @@ export default function Home() {
                 Let's build <br /> something <span className="text-accent">meaningful.</span>
               </h2>
               <p className="text-muted leading-relaxed text-base md:text-lg max-w-md font-light">
-                Currently accepting select operational optimization and data platform engagements for late 2026. I am particularly interested in scale-up enterprise systems and AI automation architectures.
+                Open to new opportunities in Planning Engineering and Data Analytics roles. Particularly interested in office-based PMO, project controls, and enterprise data platform positions.
               </p>
             </div>
             
