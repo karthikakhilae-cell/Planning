@@ -498,6 +498,44 @@ export default function Dashboard() {
       </section>
 
       <section className="px-4 sm:px-8 md:px-12 lg:px-24 py-8">
+        <Panel className="p-5 md:p-7">
+          <div className="flex flex-wrap items-end justify-between gap-4 mb-6">
+            <div>
+              <div className="text-[10px] uppercase tracking-[0.3em] font-bold text-accent mb-2">Live Power BI Embed</div>
+              <h2 className="text-3xl md:text-5xl font-display leading-tight">EPC Cash Flow & Cost Dashboard <span className="text-accent">— live demo</span></h2>
+              <p className="mt-3 max-w-2xl text-muted text-sm leading-relaxed font-light">
+                A live contractor cash-flow and cost-control dashboard for the same AED 6 billion EPC programme. Tracks budget
+                utilisation, committed vs actual cost, monthly cash flow, an S-curve of cumulative spend, retention, net cash
+                position, invoice ageing and collection rate — with cost-breakdown and forecast-at-completion by category.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {["Power BI", "DAX", "Cost Control", "Cash Flow", "Invoicing"].map((tag) => (
+                <span key={tag} className="rounded-full bg-white/80 px-3 py-1.5 text-[10px] uppercase tracking-widest font-bold text-accent ring-1 ring-line/10">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="relative w-full overflow-hidden rounded-lg ring-1 ring-line/10 bg-[#172120]" style={{ paddingTop: "62.5%" }}>
+            <iframe
+              title="EPC_CashFlow_Dashboard"
+              src="https://app.powerbi.com/view?r=eyJrIjoiNjVkMDg2ODItNzUyYS00YzMwLThlMzUtZjYwN2M5MWYyODQ4IiwidCI6ImYwNmE0NTJkLTMzZDAtNDYxYi1hZWFkLWE2NDI5NjI0OTY4NyIsImMiOjEwfQ%3D%3D"
+              frameBorder={0}
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+            />
+          </div>
+          <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-3 text-[10px] uppercase tracking-widest font-bold text-muted/60">
+            <span>Committed: 93%</span>
+            <span>Cost Var: −AED 164 M</span>
+            <span>Net Position: −AED 579 M</span>
+            <span>Collection: 47.4%</span>
+          </div>
+        </Panel>
+      </section>
+
+      <section className="px-4 sm:px-8 md:px-12 lg:px-24 py-8">
         <div className="grid lg:grid-cols-3 gap-5 md:gap-6">
           <Panel className="p-5 md:p-7 lg:col-span-2">
             <div className="flex items-center justify-between mb-7">
