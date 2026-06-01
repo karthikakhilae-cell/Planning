@@ -9,6 +9,16 @@ import React from "react";
 
 export const PROJECTS = [
   {
+    id: 'p6-health-checker',
+    title: 'P6 Schedule Health Checker',
+    category: 'Project Controls',
+    description: 'A Python CLI tool that audits Primavera P6 schedules using the DCMA 14-Point methodology. Parses native .xer exports, runs ten schedule-quality checks (open ends, leads/lags, hard constraints, negative float, high duration, missing resources), computes a weighted health score, and generates a professional PDF report.',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop',
+    year: '2025',
+    tags: ['Python', 'Primavera P6', 'DCMA 14-Point', 'PDF Reporting'],
+    link: 'https://github.com/akhilkarthik/p6-schedule-health-checker'
+  },
+  {
     id: 'fabric-lakehouse',
     title: 'Enterprise Fabric Data Lakehouse',
     category: 'Microsoft Fabric',
