@@ -141,6 +141,61 @@ export default function Home() {
         </motion.div>
       </section>
 
+      {/* Featured Work — surfaced immediately after the hero */}
+      <section className="px-4 sm:px-8 md:px-12 lg:px-24 pt-16 md:pt-24 pb-8">
+        <div className="max-w-4xl mb-10 md:mb-14">
+          <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent mb-4 block">Featured Work</span>
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-display leading-tight">Live dashboards &amp; tools.</h2>
+          <p className="mt-4 text-sm text-muted/70 max-w-xl leading-relaxed font-light">
+            Interactive project-controls work built on Primavera P6, Power BI and Python — covering schedule, cost and automation.
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          {[
+            {
+              to: "/dashboard", external: false,
+              tag: "Power BI · EVM",
+              title: "EPC EVM Dashboard",
+              desc: "Live earned-value dashboard — S-curve, SPI/CPI, EAC forecasting and discipline progress for an AED 6B EPC programme."
+            },
+            {
+              to: "/dashboard", external: false,
+              tag: "Power BI · Cost",
+              title: "Cash Flow Dashboard",
+              desc: "Contractor cash-flow and cost control — budget vs committed vs actual, invoice ageing, retention and net position."
+            },
+            {
+              to: "https://github.com/akhilkarthik/p6-schedule-health-checker", external: true,
+              tag: "Python · DCMA",
+              title: "P6 Health Checker",
+              desc: "A Python CLI that audits Primavera P6 .xer schedules against the DCMA 14-Point method and outputs a PDF report."
+            }
+          ].map((p, i) => {
+            const inner = (
+              <>
+                <div>
+                  <div className="text-[10px] uppercase tracking-widest font-bold text-accent mb-6">{p.tag}</div>
+                  <h3 className="text-2xl md:text-3xl mb-3 font-display group-hover:text-accent transition-colors">{p.title}</h3>
+                  <p className="text-sm text-muted/60 leading-relaxed">{p.desc}</p>
+                </div>
+                <div className="flex justify-end mt-8">
+                  <div className="w-12 h-12 rounded-full border border-line/10 flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-500">
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </>
+            );
+            const cls = "group p-8 md:p-10 bg-white rounded-[2rem] md:rounded-[2.5rem] border border-line/5 hover:border-accent/20 hover:shadow-2xl hover:shadow-accent/5 transition-all duration-700 flex flex-col justify-between min-h-[280px]";
+            return p.external ? (
+              <a key={i} href={p.to} target="_blank" rel="noopener noreferrer" className={cls}>{inner}</a>
+            ) : (
+              <Link key={i} to={p.to} className={cls}>{inner}</Link>
+            );
+          })}
+        </div>
+      </section>
+
       <AnalyticsVisuals projectCount={projects.length} />
 
       <AntigravitySkills />
@@ -155,8 +210,8 @@ export default function Home() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {[
             { to: "/work", title: "Work", desc: "Selected professional projects and case studies." },
-            { to: "/dashboard", title: "Dashboard", desc: "Advanced KPI, S-curve, risk, and controls visuals." },
-            { to: "/blogs", title: "Blogs", desc: "Long-form articles and technical deep-dives on Medium." },
+            { to: "/dashboard", title: "Dashboards", desc: "Live, interactive Power BI dashboards." },
+            { to: "/blogs", title: "Blogs", desc: "Long-form articles and technical deep-dives." },
             { to: "/lab", title: "Lab", desc: "Experiments, technical ideas, and raw prototypes." },
             { to: "/thinking", title: "Thinking", desc: "Strategic insights and technical deep-dives." },
             { to: "/arts", title: "Arts", desc: "Creative writing, digital art, and visual works." },
