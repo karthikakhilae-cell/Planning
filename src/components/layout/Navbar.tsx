@@ -5,13 +5,15 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { PROFILE_PIC, SOCIAL_LINKS } from "../../constants";
 
 const NAV_LINKS = [
+  // Primary — career-critical pages shown in the desktop bar
   { name: "Home", path: "/home" },
   { name: "Work", path: "/work" },
-  { name: "Dashboard", path: "/dashboard" },
+  { name: "Dashboards", path: "/dashboard" },
+  { name: "Blogs", path: "/blogs" },
   { name: "Hire Me", path: "/hire-me" },
+  // Secondary — surfaced via the "More +" menu
   { name: "Lab", path: "/lab" },
   { name: "Thinking", path: "/thinking" },
-  { name: "Blogs", path: "/blogs" },
   { name: "Life", path: "/life" },
   { name: "Arts", path: "/arts" },
   { name: "Journal", path: "/journal" },
@@ -19,6 +21,9 @@ const NAV_LINKS = [
   { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" }
 ];
+
+// Number of primary links shown directly in the desktop bar
+const PRIMARY_COUNT = 5;
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,7 +64,7 @@ export default function Navbar() {
         </motion.div>
         
         <div className="hidden lg:flex gap-6 xl:gap-8 text-[10px] uppercase tracking-[0.2em] font-bold text-ink/60">
-          {NAV_LINKS.slice(0, 7).map((link) => (
+          {NAV_LINKS.slice(0, PRIMARY_COUNT).map((link) => (
             <Link 
               key={link.path}
               to={link.path} 
