@@ -9,6 +9,16 @@ import React from "react";
 
 export const PROJECTS = [
   {
+    id: 'p6-schedule-visualizer',
+    title: 'P6 Schedule Visualizer',
+    category: 'Project Controls',
+    description: 'A unified tool that connects to Primavera P6 from three sources — native .xer files, the P6 EPPM REST API, or the P6 SQL database — normalizes the data into one model, and visualizes it through an interactive Streamlit app (Gantt, S-curve, discipline progress) plus a one-click Power BI Excel export.',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
+    year: '2025',
+    tags: ['Python', 'Streamlit', 'Primavera P6', 'Power BI', 'Plotly'],
+    link: 'https://github.com/akhilkarthik/p6-schedule-visualizer'
+  },
+  {
     id: 'p6-health-checker',
     title: 'P6 Schedule Health Checker',
     category: 'Project Controls',
