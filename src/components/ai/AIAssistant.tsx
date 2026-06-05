@@ -554,9 +554,6 @@ Guidelines:
                   <Send className="w-4 h-4" />
                 </button>
               </form>
-              <div className="mt-4 text-[8px] text-center uppercase tracking-[0.2em] font-bold text-muted/40">
-                Powered by Gemini 2.0 Flash
-              </div>
             </div>
           </motion.div>
         )}
