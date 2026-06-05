@@ -9,6 +9,16 @@ import React from "react";
 
 export const PROJECTS = [
   {
+    id: 'isometric-bom-extractor',
+    title: 'Isometric BOM Extractor (IsoMTO)',
+    category: 'Engineering Automation',
+    description: 'A fully offline Python tool that OCRs the Bill of Materials from piping isometric drawings (vector PDFs with no text layer) and reconciles every item code against a project code master — exact, fuzzy, and reverse-lookup-by-description matching — producing one combined Excel/CSV for material take-off. Flags uncertain rows rather than guessing.',
+    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200&auto=format&fit=crop',
+    year: '2025',
+    tags: ['Python', 'OCR', 'Tesseract', 'PyMuPDF', 'Pandas', 'EPC Piping'],
+    link: 'https://github.com/akhilkarthik/isometric-bom-extractor'
+  },
+  {
     id: 'p6-schedule-visualizer',
     title: 'P6 Schedule Visualizer',
     category: 'Project Controls',
