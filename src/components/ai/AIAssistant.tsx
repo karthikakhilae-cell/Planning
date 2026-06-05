@@ -209,6 +209,36 @@ Guidelines:
       return;
     }
 
+    // Try the live AI (Groq via secure Netlify function) first.
+    // On any failure, fall through to the built-in responses below.
+    try {
+      const history = messages
+        .filter(m => m.role === "user" || m.role === "model")
+        .map(m => ({ role: m.role === "model" ? "assistant" : "user", content: m.text }));
+      const res = await fetch("/.netlify/functions/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: messageToSend.trim(), history }),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        if (data && data.reply) {
+          setMessages(prev => [...prev, {
+            role: "model",
+            text: data.reply,
+            suggestions: ["Show me his projects", "What are his skills?", "Contact Akhil", "Copy CV Link"],
+          }]);
+          setIsLoading(false);
+          setIsTyping(false);
+          setIsGenerating(false);
+          resetIdleTimer();
+          return;
+        }
+      }
+    } catch {
+      // network/API issue — fall back to the built-in responses
+    }
+
     // Simulate a small delay for a "human" feel
     setTimeout(() => {
       let responseText = getRandomResponse("fallback");
